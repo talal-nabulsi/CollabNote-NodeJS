@@ -45,6 +45,7 @@ exports.createNote = function(req, res) {
 };
 
 // Filter by Name
+//Display only notes by selected user
 exports.noteByMember = function(req, res) {
   var query = Note.find({});
   var filter = req.body.memberName;
